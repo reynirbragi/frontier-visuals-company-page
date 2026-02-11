@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontier Visuals | Custom Web Design for Creative Businesses</title>
+    <meta name="description"
+        content="Frontier Visuals offers custom, responsive web design for small businesses, freelancers, and creative professionals in Southern California. Explore our packages today.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "syCwpF0OK6fY8lAJe",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/logo_new.png" alt="Frontier Visuals Logo" class="logo-img">
+                FRONTIER VISUALS
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle navigation" id="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="process.html" class="nav-link-contact">Process</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video" poster="assets/hero-poster.jpg">
+            <source src="assets/landing_page_loop.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Custom made website for your business</h1>
+            <a href="#packages" class="btn btn-lg btn-shine">Explore Packages</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container about-container">
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <!-- Placeholder for user's photo -->
+                    <img src="assets/profile.png" alt="Founder of Frontier Visuals" class="about-photo">
+                </div>
+            </div>
+            <div class="about-text">
+                <h2>About Frontier Visuals</h2>
+                <blockquote class="about-quote">
+                    "A good website facilitates visitors to quickly do exactly what you want them to."
+                </blockquote>
+                <p>
+                    You’re probably here because you know you need a better website — but you’re not sure where to
+                    start.
+                    Maybe your current site feels outdated. Maybe people don’t quite understand what you offer.
+                    Or maybe you’ve been putting this off because it feels overwhelming.
+                </p>
+                <p>
+                    Based in Southern California, we help small businesses, creative professionals, and freelancers
+                    establish a powerful online presence.
+                    Your website isn't just a digital business card — it's the frontier of your brand's growth.
+                    We focus on clear design, seamless user experience, and authentic storytelling.
+                </p>
+
+                <div class="about-actions">
+                    <a href="tel:9499035416" class="btn btn-primary btn-with-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        Call Me
+                    </a>
+                    <a href="#" class="btn btn-outline btn-with-icon" id="email-trigger">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        EMAIL
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="section packages">
+        <div class="container">
+            <h2 class="section-title">Design Packages</h2>
+            <div class="packages-grid">
+
+                <!-- Starter -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Starter</h3>
+                        <p class="price">from $500</p>
+                    </div>
+                    <div class="package-body">
+                        <p class="package-desc">Perfect for a quick, professional launch. 1-3 page landing page or site.
+                        </p>
+                        <ul class="package-features">
+                            <li>3 Pages</li>
+                            <li>Mobile-friendly</li>
+                            <li>CMS Setup (WordPress/Squarespace)</li>
+                            <li>Contact Form</li>
+                            <li>Timeline: 1-2 weeks</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline" data-package="Starter">Choose Starter</a>
+                    </div>
+                </div>
+
+                <!-- Professional -->
+                <div class="package-card recommended">
+                    <div class="badge">Recommended</div>
+                    <div class="package-header">
+                        <h3>Professional</h3>
+                        <p class="price">from $1,400</p>
+                    </div>
+                    <div class="package-body">
+                        <p class="package-desc">Expanded presence for growing businesses.</p>
+                        <ul class="package-features">
+                            <li><strong>Everything in Starter, plus:</strong></li>
+                            <li>5 Pages</li>
+                            <li>Enhanced Design</li>
+                            <li>Basic SEO</li>
+                            <li>Social Media Integration</li>
+                            <li>Timeline: 2-3 weeks</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" data-package="Professional">Choose Professional</a>
+                    </div>
+                </div>
+
+                <!-- Premium -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Premium</h3>
+                        <p class="price">from $2,000</p>
+                    </div>
+                    <div class="package-body">
+                        <p class="package-desc">Full branding and storytelling experience.</p>
+                        <ul class="package-features">
+                            <li><strong>Everything in Professional, plus:</strong></li>
+                            <li>5-10 Pages</li>
+                            <li>Custom Graphic Design & Branding</li>
+                            <li>Strong Storytelling & Original Copy</li>
+                            <li>Advanced SEO Strategy</li>
+                            <li>Timeline: 4-6 weeks</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline" data-package="Premium">Choose Premium</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Custom Section -->
+    <section id="contact" class="section contact">
+        <div class="container contact-container">
+            <div class="contact-header">
+                <h2>Not sure what you need?</h2>
+                <p>I’ll help you. Tell me about your project and we'll figure out the best path forward.</p>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">How can I help?</label>
+                    <textarea id="message" name="message" rows="5" required
+                        placeholder="Describe your project or ask a question..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo-footer">
+                    <img src="assets/logo_new.png" alt="Frontier Visuals" class="logo-img-footer">
+                    FRONTIER VISUALS
+                </a>
+                <p>&copy; 2026 Frontier Visuals. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <!-- Social links removed as requested -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Package Selection Modal -->
+    <div class="modal-overlay" id="package-modal">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h3>Start Your Project</h3>
+                <p>No commitment yet. This simple form helps us understand your needs.</p>
+            </div>
+            <form class="modal-form" id="package-form">
+                <div class="form-group">
+                    <label for="modal-name">Name</label>
+                    <input type="text" id="modal-name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="modal-email">Email</label>
+                    <input type="email" id="modal-email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Phone Number</label>
+                    <input type="tel" id="modal-phone" name="phone" placeholder="(123) 456-7890">
+                </div>
+                <div class="form-group">
+                    <label for="modal-business">Business / Project Name</label>
+                    <input type="text" id="modal-business" name="business" placeholder="Company Name">
+                </div>
+                <div class="form-group">
+                    <label for="modal-package">Selected Package</label>
+                    <div class="select-wrapper">
+                        <select id="modal-package" name="package">
+                            <option value="Starter">Starter Package</option>
+                            <option value="Professional">Professional Package</option>
+                            <option value="Premium">Premium Package</option>
+                            <option value="Custom">Other / Not Sure</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="modal-details">Tell us about your vision</label>
+                    <textarea id="modal-details" name="details" rows="4"
+                        placeholder="What are your goals? Any design preferences?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-shine full-width">Send Inquiry</button>
+            </form>
+
+            <!-- Success Message (Initially Hidden) -->
+            <div class="modal-success" id="modal-success" style="display: none;">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <h3>Message Sent!</h3>
+                <p>Thanks for your inquiry! I’ll review your message and get back to you within 1–2 business days.</p>
+                <button class="btn btn-primary" id="success-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

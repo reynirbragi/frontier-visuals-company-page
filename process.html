@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Process | Frontier Visuals</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="process-page">
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo_new.png" alt="Frontier Visuals Logo" class="logo-img">
+                FRONTIER VISUALS
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle navigation" id="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#packages">Packages</a></li>
+                    <li><a href="process.html" class="nav-link-contact active">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Process Hero -->
+    <section class="process-hero">
+        <div class="container">
+            <h1 class="process-headline animate-fade-up">How we build your<br><span class="highlight">digital
+                    frontier.</span></h1>
+            <p class="process-intro animate-fade-up">A transparent, four-step journey to a website that works for you.
+                No jargon, just
+                clear checkpoints.</p>
+        </div>
+    </section>
+
+    <!-- Elegant Typographic Timeline -->
+    <section class="section process-timeline-section">
+        <div class="container">
+            <div class="timeline-grid">
+
+                <!-- Step 01 -->
+                <div class="timeline-item animate-fade-up">
+                    <div class="step-meta">
+                        <span class="step-number">01</span>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-info">
+                        <h3>Clarity Call</h3>
+                        <p>We start with a conversation, not a pitch. I want to understand your goals, your audience,
+                            and what "success" looks like for this project.</p>
+                    </div>
+                </div>
+
+                <!-- Step 02 -->
+                <div class="timeline-item animate-fade-up">
+                    <div class="step-meta">
+                        <span class="step-number">02</span>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-info">
+                        <h3>Strategy & Design</h3>
+                        <p>I map out the structure to ensure your visitors inevitably find what they need. Then, I apply
+                            your unique aesthetic—bold, warm, and professional, whatever suits your business.</p>
+                    </div>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="timeline-item animate-fade-up">
+                    <div class="step-meta">
+                        <span class="step-number">03</span>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-info">
+                        <h3>Build & Refine</h3>
+                        <p>You see the progress as it happens. We tweak the details until the interactions feel smooth
+                            and the story flows perfectly.</p>
+                    </div>
+                </div>
+
+                <!-- Step 04 -->
+                <div class="timeline-item animate-fade-up">
+                    <div class="step-meta">
+                        <span class="step-number">04</span>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-info">
+                        <h3>Launch</h3>
+                        <p>We go live. I ensure technical SEO is set, forms work, and you know exactly how to update
+                            your new site, and you’re not left guessing what comes next.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section contact-minimal">
+        <div class="container contact-wrapper-centered">
+            <h2 class="animate-fade-up">Ready to build your frontier?</h2>
+            <div class="cta-group animate-fade-up">
+                <a href="#" class="btn btn-lg btn-shine contact-trigger">Book Call</a>
+                <a href="index.html#packages" class="btn btn-lg btn-shine">View Design Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-footer">
+                    <img src="assets/logo_new.png" alt="Frontier Visuals" class="logo-img-footer">
+                    FRONTIER VISUALS
+                </a>
+                <p>&copy; 2026 Frontier Visuals. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <!-- Social links removed as requested -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Package Selection Modal -->
+    <div class="modal-overlay" id="package-modal">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h3>Start Your Project</h3>
+                <p>No commitment yet. This simple form helps us understand your needs.</p>
+            </div>
+            <form class="modal-form" id="package-form">
+                <div class="form-group">
+                    <label for="modal-name">Name</label>
+                    <input type="text" id="modal-name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="modal-email">Email</label>
+                    <input type="email" id="modal-email" name="email" required placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Phone Number</label>
+                    <input type="tel" id="modal-phone" name="phone" placeholder="(123) 456-7890">
+                </div>
+                <div class="form-group">
+                    <label for="modal-business">Business / Project Name</label>
+                    <input type="text" id="modal-business" name="business" placeholder="Company Name">
+                </div>
+                <div class="form-group">
+                    <label for="modal-package">Selected Package</label>
+                    <div class="select-wrapper">
+                        <select id="modal-package" name="package">
+                            <option value="Starter">Starter Package</option>
+                            <option value="Professional">Professional Package</option>
+                            <option value="Premium">Premium Package</option>
+                            <option value="Custom">Other / Not Sure</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="modal-details">Tell us about your vision</label>
+                    <textarea id="modal-details" name="details" rows="4"
+                        placeholder="What are your goals? Any design preferences?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-shine full-width">Send Inquiry</button>
+            </form>
+
+            <!-- Success Message (Initially Hidden) -->
+            <div class="modal-success" id="modal-success" style="display: none;">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <h3>Message Sent!</h3>
+                <p>Thanks for your inquiry! I’ll review your message and get back to you within 1–2 business days.</p>
+                <button class="btn btn-primary" id="success-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
