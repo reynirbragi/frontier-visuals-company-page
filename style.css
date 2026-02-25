@@ -366,7 +366,7 @@ img {
 
 .about-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 6fr;
     gap: var(--spacing-lg);
     align-items: center;
 }
@@ -384,6 +384,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 20%;
 }
 
 .about-text h2 {

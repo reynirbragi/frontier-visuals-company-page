@@ -152,12 +152,18 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
 
-        // Replace these with your actual Service ID and Template ID
-        const serviceID = 'service_5pneddc';
-        const templateID = 'template_pqe2wen';
-
-        emailjs.sendForm(serviceID, templateID, packageForm)
-            .then(() => {
+        // Send data to PHP backend
+        fetch('send_email.php', {
+            method: 'POST',
+            body: new FormData(packageForm)
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
                 submitBtn.textContent = 'Sent!';
                 // Hide Form and Header
                 packageForm.style.display = 'none';
@@ -165,10 +171,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Show Success Message
                 successMessage.style.display = 'flex';
-            }, (err) => {
+            })
+            .catch((err) => {
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
-                alert('Failed to send message. Please try again later.\nError: ' + JSON.stringify(err));
+                alert('Failed to send message. Please try again later.\nError: ' + err.message);
             });
     });
 
@@ -183,12 +190,18 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
 
-            // Replace these with your actual Service ID and Template ID
-            const serviceID = 'service_5pneddc';
-            const templateID = 'template_pqe2wen';
-
-            emailjs.sendForm(serviceID, templateID, contactForm)
-                .then(() => {
+            // Send data to PHP backend
+            fetch('send_email.php', {
+                method: 'POST',
+                body: new FormData(contactForm)
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
                     // Open the modal but show the success message immediately
                     modal.classList.add('active');
                     document.body.style.overflow = 'hidden';
@@ -202,10 +215,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.textContent = originalText;
                     submitBtn.disabled = false;
                     contactForm.reset();
-                }, (err) => {
+                })
+                .catch((err) => {
                     submitBtn.textContent = originalText;
                     submitBtn.disabled = false;
-                    alert('Failed to send message. Please try again later.\nError: ' + JSON.stringify(err));
+                    alert('Failed to send message. Please try again later.\nError: ' + err.message);
                 });
         });
     }
