@@ -152,10 +152,13 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
 
-        // Send data to PHP backend
-        fetch('send_email.php', {
+        // Send data to Formspree
+        fetch('https://formspree.io/f/mojnbyod', {
             method: 'POST',
-            body: new FormData(packageForm)
+            body: new FormData(packageForm),
+            headers: {
+                'Accept': 'application/json'
+            }
         })
             .then(response => {
                 if (!response.ok) {
@@ -190,10 +193,13 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
 
-            // Send data to PHP backend
-            fetch('send_email.php', {
+            // Send data to Formspree
+            fetch('https://formspree.io/f/mojnbyod', {
                 method: 'POST',
-                body: new FormData(contactForm)
+                body: new FormData(contactForm),
+                headers: {
+                    'Accept': 'application/json'
+                }
             })
                 .then(response => {
                     if (!response.ok) {
